@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-Worker-5ecb8614-6690-4ad2-9f5a-252021f38879</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ETLProject.Core.Domain\ETLProjectDW.Core.Domain.csproj" />
+    <ProjectReference Include="..\ETLProject.Infrastructure.Persistence\ETLProject.Infrastructure.Persistence.csproj" />
+    <ProjectReference Include="..\ETLProjectDW.Core.Application\ETLProjectDW.Core.Application.csproj" />
+    <ProjectReference Include="..\ETLProjectDW.Infrastructure.Share\ETLProjectDW.Infrastructure.Share.csproj" />
+  </ItemGroup>
+</Project>

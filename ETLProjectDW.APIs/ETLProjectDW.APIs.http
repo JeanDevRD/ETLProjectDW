@@ -1,0 +1,6 @@
+@ETLProjectDW.APIs_HostAddress = http://localhost:5276
+
+GET {{ETLProjectDW.APIs_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
